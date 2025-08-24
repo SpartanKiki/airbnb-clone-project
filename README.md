@@ -152,3 +152,29 @@ To ensure the safety and reliability of the Airbnb Clone application, the backen
   - Payment details will not be stored directly in the system.
   - Instead, trusted third-party providers (e.g., Stripe, PayPal) will handle transactions.
   - This ensures compliance with industry standards like PCI-DSS.
+
+## CI/CD Pipeline
+
+A **CI/CD (Continuous Integration and Continuous Deployment) pipeline** ensures that our Airbnb Clone project is developed, tested, and deployed efficiently with minimal human error.
+
+- **Continuous Integration (CI)**
+  - Every time code is pushed to GitHub, automated tests will run.
+  - This helps catch bugs early and ensures new code does not break existing functionality.
+  - Tools: **GitHub Actions** for running automated workflows.
+
+- **Continuous Deployment (CD)**
+  - Once code passes all tests, it can be automatically deployed to a staging or production environment.
+  - This guarantees faster release cycles and more reliable updates.
+  - Tools: **Docker** for containerization, **Heroku/AWS** for hosting.
+
+- **Benefits**
+  - Increases team efficiency by automating repetitive tasks.
+  - Ensures consistent deployments across environments.
+  - Reduces risk of bugs reaching production.
+
+**Example Workflow:**
+1. Developer pushes code to GitHub.
+2. GitHub Actions run tests and linting checks.
+3. If tests pass, Docker builds a container image of the app.
+4. The container is deployed to the server (Heroku, AWS, or similar).
+5. Application is live with minimal downtime.
