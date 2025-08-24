@@ -85,4 +85,28 @@ The database will use a relational structure with the following key entities:
 - A **Review** is linked to one User and one Property.
 - A **Payment** is always linked to one Booking.
 
+## Feature Breakdown
+
+The Airbnb Clone will include the following main features:
+
+- **User Management**
+  - Users can sign up, log in, and manage their profiles.
+  - Authentication and authorization ensure secure access.
+  - Supports roles like guest, host, and admin.
+
+- **Property Management**
+  - Hosts can list new properties with details (title, description, location, price).
+  - Properties can include multiple images and amenities.
+  - Hosts can edit or remove their listings.
+
+- **Booking System**
+  - Guests can view available properties and make bookings.
+  - Bookings include start/end dates, price, and booking status.
+  - Users can cancel or modify bookings within certain rules.
+
+- **Payment Integration**
+  - Guests can securely pay for bookings.
+  - Payment records are stored with booking details.
+  - Multiple payment methods (e.g., credit card, PayPal) can be supported.
+
 
