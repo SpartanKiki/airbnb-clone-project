@@ -37,3 +37,52 @@ The Airbnb Clone project is built using the following technologies:
 - **Docker**: Provides a consistent development and deployment environment through containerization.
 - **CI/CD Pipelines (GitHub Actions)**: Automates testing and deployment to ensure code reliability and faster delivery.
 
+## Database Design
+
+The database will use a relational structure with the following key entities:
+
+- **Users**
+  - `id` (Primary Key)
+  - `username`
+  - `email`
+  - `password`
+  - `role` (guest, host, admin)
+
+- **Properties**
+  - `id` (Primary Key)
+  - `title`
+  - `description`
+  - `location`
+  - `price_per_night`
+  - `host_id` (Foreign Key → Users)
+
+- **Bookings**
+  - `id` (Primary Key)
+  - `user_id` (Foreign Key → Users)
+  - `property_id` (Foreign Key → Properties)
+  - `start_date`
+  - `end_date`
+  - `status` (pending, confirmed, cancelled)
+
+- **Reviews**
+  - `id` (Primary Key)
+  - `user_id` (Foreign Key → Users)
+  - `property_id` (Foreign Key → Properties)
+  - `rating`
+  - `comment`
+
+- **Payments**
+  - `id` (Primary Key)
+  - `booking_id` (Foreign Key → Bookings)
+  - `amount`
+  - `payment_method`
+  - `status` (pending, successful, failed)
+
+### Relationships
+- A **User** can be both a guest (booking properties) or a host (listing properties).
+- A **Property** belongs to one host (User), but can have many bookings and reviews.
+- A **Booking** is linked to one User and one Property.
+- A **Review** is linked to one User and one Property.
+- A **Payment** is always linked to one Booking.
+
+
