@@ -109,4 +109,15 @@ The Airbnb Clone will include the following main features:
   - Payment records are stored with booking details.
   - Multiple payment methods (e.g., credit card, PayPal) can be supported.
 
+- **Review System**
+  - Guests can leave reviews and ratings for properties.
+  - Reviews are tied to both the property and the user.
+  - Hosts can view feedback to improve services.
 
+- **Search and Filtering**
+  - Guests can search properties by location, date, and price.
+  - Advanced filters (e.g., amenities, property type) enhance the user experience.
+
+- **Admin Dashboard**
+  - Admins can oversee users, properties, and bookings.
+  - Tools for monitoring system activity and handling disputes.
