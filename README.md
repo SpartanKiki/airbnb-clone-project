@@ -75,7 +75,7 @@ The database will use a relational structure with the following key entities:
   - `id` (Primary Key)
   - `booking_id` (Foreign Key → Bookings)
   - `amount`
-  - `payment_method`
+  - `payment_method` (e.g., Credit Card, PayPal, M-Pesa)
   - `status` (pending, successful, failed)
 
 ### Relationships
@@ -107,7 +107,10 @@ The Airbnb Clone will include the following main features:
 - **Payment Integration**
   - Guests can securely pay for bookings.
   - Payment records are stored with booking details.
-  - Multiple payment methods (e.g., credit card, PayPal) can be supported.
+  - Multiple payment methods supported:
+    - Credit/Debit Cards
+    - PayPal
+    - **M-Pesa (mobile money integration for local users)**
 
 - **Review System**
   - Guests can leave reviews and ratings for properties.
@@ -150,7 +153,7 @@ To ensure the safety and reliability of the Airbnb Clone application, the backen
 
 - **Payment Security**
   - Payment details will not be stored directly in the system.
-  - Instead, trusted third-party providers (e.g., Stripe, PayPal) will handle transactions.
+  - Instead, trusted third-party providers (e.g., Stripe, PayPal, **M-Pesa APIs**) will handle transactions.
   - This ensures compliance with industry standards like PCI-DSS.
 
 ## CI/CD Pipeline
@@ -178,3 +181,4 @@ A **CI/CD (Continuous Integration and Continuous Deployment) pipeline** ensures 
 3. If tests pass, Docker builds a container image of the app.
 4. The container is deployed to the server (Heroku, AWS, or similar).
 5. Application is live with minimal downtime.
+
