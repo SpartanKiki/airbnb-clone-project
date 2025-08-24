@@ -110,7 +110,7 @@ The Airbnb Clone will include the following main features:
   - Multiple payment methods supported:
     - Credit/Debit Cards
     - PayPal
-    - **M-Pesa (mobile money integration for local users)**
+    - M-Pesa (mobile money integration for local users)
 
 - **Review System**
   - Guests can leave reviews and ratings for properties.
