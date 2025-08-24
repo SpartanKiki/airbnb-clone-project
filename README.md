@@ -121,3 +121,34 @@ The Airbnb Clone will include the following main features:
 - **Admin Dashboard**
   - Admins can oversee users, properties, and bookings.
   - Tools for monitoring system activity and handling disputes.
+
+## API Security
+
+To ensure the safety and reliability of the Airbnb Clone application, the backend APIs will include several security measures:
+
+- **Authentication**
+  - Users must log in before accessing protected resources.
+  - Implemented using secure methods such as JWT (JSON Web Tokens) or session-based authentication.
+  - Prevents unauthorized access to user accounts.
+
+- **Authorization**
+  - Controls what actions users can perform based on their role (guest, host, admin).
+  - Ensures that only the right people can modify or view specific resources.
+  - Example: only a host can edit their own property, and only an admin can remove accounts.
+
+- **Input Validation & Sanitization**
+  - Protects against SQL Injection and XSS attacks by validating user input.
+  - Ensures only properly formatted data is processed by the system.
+
+- **Rate Limiting**
+  - Limits the number of requests a user can make in a given timeframe.
+  - Prevents abuse such as brute-force login attempts or denial-of-service attacks.
+
+- **Data Encryption**
+  - Sensitive data such as passwords are hashed (e.g., using bcrypt).
+  - All network communication will use HTTPS to prevent data interception.
+
+- **Payment Security**
+  - Payment details will not be stored directly in the system.
+  - Instead, trusted third-party providers (e.g., Stripe, PayPal) will handle transactions.
+  - This ensures compliance with industry standards like PCI-DSS.
