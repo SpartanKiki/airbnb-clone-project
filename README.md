@@ -14,3 +14,12 @@ It focuses on backend development, database design, API development, and securit
 - **Database**: MySQL
 - **API**: GraphQL / REST
 - **Deployment & CI/CD**: Docker, GitHub Actions
+
+## Team Roles
+
+- **Backend Developer**: Responsible for implementing the core application logic, designing APIs, and integrating services.
+- **Database Administrator (DBA)**: Manages database design, optimization, backups, and ensures data integrity.
+- **DevOps Engineer**: Handles CI/CD pipelines, server deployment, monitoring, and scalability.
+- **Frontend Developer**: Works on the user-facing part of the app, ensuring seamless integration with backend APIs.
+- **Project Manager**: Coordinates tasks, ensures deadlines are met, and manages collaboration between all team members.
+- **QA Engineer (Tester)**: Tests features, finds bugs, and ensures application quality and reliability.
